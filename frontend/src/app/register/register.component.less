@@ -1,0 +1,69 @@
+/* Register component styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Maintaining a neutral border */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly enhanced shadow for depth */
+  background-color: #ffffff; /* Added a clean white background for contrast */
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #7e57c2; /* Soft purple for the heading */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #6a1b9a; /* Darker purple for labels for better readability */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ce93d8; /* Lighter purple for a softer look */
+  border-radius: 3px;
+  background-color: #f3e5f5; /* Very light purple background for inputs */
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Subtle inner shadow for depth */
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #9575cd; /* Darker purple on focus for emphasis */
+  outline: none; /* Remove default focus outline */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-image: linear-gradient(135deg, #9575cd 0%, #7e57c2 100%); /* Stylish purple gradient */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interaction */
+}
+
+button:hover {
+  transform: translateY(-2px); /* Lift button on hover */
+  box-shadow: 0 5px 15px rgba(126,87,194,0.4); /* Enhanced shadow for lifted effect */
+}
